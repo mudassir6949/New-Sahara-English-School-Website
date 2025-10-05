@@ -73,7 +73,7 @@ export default function AboutPage() {
           <img
             src="/logo.sahara.jpeg"
             alt="NSES Logo"
-            className="w-12 h-12 rounded-full"
+            className="w-8 h-8 rounded-full"
           />
           NSES
         </button>
@@ -103,23 +103,26 @@ export default function AboutPage() {
 
       {/* Admission Form Modal */}
       {showAdmission && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-sm">
-          <div className="bg-white/20 p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4">
+        <div className="fixed inset-0 flex items-center justify-center bg-src=/image10..jpeg bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4">
             <button
               onClick={() => setShowAdmission(false)}
               className="absolute top-2 right-2 text-red-600 text-lg"
             >
               ✖
             </button>
-            <AdmissionForm onsubmit={() => setShowAdmission(false)} />
+            <AdmissionForm
+              onsubmit={() => setShowAdmission(false)}
+              // add optional switch button inside form if needed
+            />
           </div>
         </div>
       )}
 
       {/* Parents Login Modal */}
       {showParentsLogin && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-sm">
-          <div className="bg-white/20 p-6 rounded-lg shadow-lg relative w-full max-w-sm mx-4">
+        <div className="fixed inset-0 flex items-center justify-center bg-src=/image8..jpeg bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-sm mx-4">
             <button
               onClick={() => setShowParentsLogin(false)}
               className="absolute top-2 right-2 text-red-600 text-lg"
