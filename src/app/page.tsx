@@ -111,7 +111,6 @@ export default function AboutPage() {
             >
               ✖
             </button>
-            <AdmissionForm onsubmit={() => setShowAdmission(false)} />
           </div>
         </div>
       )}
@@ -172,7 +171,7 @@ export default function AboutPage() {
           </div>
           <div className="md:w-1/2 text-xl leading-relaxed">
             <h2 className="text-center md:text-left text-4xl text-red-700 mb-3">
-              "New Sahara English School"
+              &quot;New Sahara English School&quot;
             </h2>
             <p>
               New Sahara English School is run by HWS and follows MSBSHSE. We
